@@ -1,4 +1,4 @@
-module test01(segA, segB, segOut, b, a);
+module xor1(segA, segB, segOut, b, a);
 	input a,b;
 	output [6:0]segA;
 	output [6:0]segB;
