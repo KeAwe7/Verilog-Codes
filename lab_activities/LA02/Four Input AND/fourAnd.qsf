@@ -1,0 +1,96 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 2018  Intel Corporation. All rights reserved.
+# Your use of Intel Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Intel Program License 
+# Subscription Agreement, the Intel Quartus Prime License Agreement,
+# the Intel FPGA IP License Agreement, or other applicable license
+# agreement, including, without limitation, that your use is for
+# the sole purpose of programming logic devices manufactured by
+# Intel and sold by Intel or its authorized distributors.  Please
+# refer to the applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus Prime
+# Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+# Date created = 17:56:09  September 24, 2023
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		fourAndTest_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus Prime software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone V"
+set_global_assignment -name DEVICE 5CSEMA5F31C6
+set_global_assignment -name TOP_LEVEL_ENTITY fourAndTest
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 18.1.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "17:56:09  SEPTEMBER 24, 2023"
+set_global_assignment -name LAST_QUARTUS_VERSION "18.1.0 Lite Edition"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 256
+set_global_assignment -name VERILOG_FILE fourAndTest.v
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name VERILOG_FILE tb_fourAndTest.v
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name VERILOG_FILE displayValues.v
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
+set_location_assignment PIN_AE26 -to segOut[0]
+set_location_assignment PIN_AE27 -to segOut[1]
+set_location_assignment PIN_AE28 -to segOut[2]
+set_location_assignment PIN_AG27 -to segOut[3]
+set_location_assignment PIN_AF28 -to segOut[4]
+set_location_assignment PIN_AG28 -to segOut[5]
+set_location_assignment PIN_AH28 -to segOut[6]
+set_location_assignment PIN_AB23 -to segD[0]
+set_location_assignment PIN_AE29 -to segD[1]
+set_location_assignment PIN_AD29 -to segD[2]
+set_location_assignment PIN_AC28 -to segD[3]
+set_location_assignment PIN_AD30 -to segD[4]
+set_location_assignment PIN_AC29 -to segD[5]
+set_location_assignment PIN_AC30 -to segD[6]
+set_location_assignment PIN_AD26 -to segC[0]
+set_location_assignment PIN_AC27 -to segC[1]
+set_location_assignment PIN_AD25 -to segC[2]
+set_location_assignment PIN_AC25 -to segC[3]
+set_location_assignment PIN_AB28 -to segC[4]
+set_location_assignment PIN_AB25 -to segC[5]
+set_location_assignment PIN_AB22 -to segC[6]
+set_location_assignment PIN_AA24 -to segB[0]
+set_location_assignment PIN_Y23 -to segB[1]
+set_location_assignment PIN_Y24 -to segB[2]
+set_location_assignment PIN_W22 -to segB[3]
+set_location_assignment PIN_W24 -to segB[4]
+set_location_assignment PIN_V23 -to segB[5]
+set_location_assignment PIN_W25 -to segB[6]
+set_location_assignment PIN_V25 -to segA[0]
+set_location_assignment PIN_AA28 -to segA[1]
+set_location_assignment PIN_Y27 -to segA[2]
+set_location_assignment PIN_AB27 -to segA[3]
+set_location_assignment PIN_AB26 -to segA[4]
+set_location_assignment PIN_AA26 -to segA[5]
+set_location_assignment PIN_AA25 -to segA[6]
+set_location_assignment PIN_AE11 -to d
+set_location_assignment PIN_AC9 -to c
+set_location_assignment PIN_AD10 -to b
+set_location_assignment PIN_AE12 -to a
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
