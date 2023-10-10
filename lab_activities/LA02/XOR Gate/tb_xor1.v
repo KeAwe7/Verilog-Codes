@@ -1,10 +1,10 @@
-module tb_test01;
+module tb_xor1;
 
     reg a, b;
     wire out;
 
     // Instantiate the module to be tested
-    test01 uut (
+    xor1 uut (
         .a(a),
         .b(b),
         .out(out)
